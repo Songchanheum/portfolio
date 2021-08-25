@@ -3,14 +3,15 @@
 
 > 1. 사용 언어
 > 
->     F - ReactJS, TypeScript
+> - F - ReactJS, TypeScript
 >     
->     UI - Chakra UI Component
+> - UI - Chakra UI Component
 >     
->     B -
+> - B -
 >     
->     DB - PostgreSQL
->     
->     CI/CD Git Jenkins Docker SonarQube Nexus
+> - DB - PostgreSQL
+
+    CI/CD Git Jenkins Docker SonarQube Nexus
+
 
 <hr/>
