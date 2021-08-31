@@ -89,7 +89,6 @@ function Home() {
       <About />
     </VStack>
     <TopButton 
-    className={BtnStatus ? "active" : ""} // 버튼 노출 여부
     onClick={handleTop}  // 버튼 클릭시 함수 호출
     >TOP</TopButton>
   </>
