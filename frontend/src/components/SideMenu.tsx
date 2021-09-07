@@ -21,7 +21,7 @@ function SideMenu(props:any) {
                 my={5}
                 w="100%"
                 onClick={()=>isSmallScreen ? '' : props.changeDisplay(false) }>
-                    소개
+                    Introduce
                 </Button>
             </Link>
             <Link to="2" spy={true} smooth={true}>
@@ -32,7 +32,7 @@ function SideMenu(props:any) {
                 my={5}
                 w="100%"
                 onClick={()=>isSmallScreen ? '' : props.changeDisplay(false) }>
-                    경력
+                    Dev Timeline
                 </Button>
             </Link>
             <Link to="3" spy={true} smooth={true}>
@@ -54,7 +54,7 @@ function SideMenu(props:any) {
                 my={5}
                 w="100%"
                 onClick={()=>isSmallScreen ? '' : props.changeDisplay(false) }>
-                    ABOUT
+                    Final
                 </Button>
             </Link>
         </>
