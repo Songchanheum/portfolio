@@ -8,6 +8,7 @@ import { loginActions } from './store/auth/login';
 import Auth from './components/HOC/authCheck';
 
 const Home = React.lazy(() => import('./pages/Home'));
+const Adder = React.lazy(() => import('./pages/Adder'));
 interface HistoryType {
   customHistory: History;
 }
@@ -33,7 +34,7 @@ function App({ customHistory }: HistoryType) {
           <Route
               path={`${process.env.PUBLIC_URL}/add`}
               render={() => (
-                  <Home />
+                  <Adder />
               )}
           />
         </Suspense>
