@@ -24,11 +24,22 @@ function App({ customHistory }: HistoryType) {
     <>
       <Router history={customHistory}>
         <Suspense fallback={<></>}>
-          <Home />
+          <Route exact
+              path={`${process.env.PUBLIC_URL}/`}
+              render={() => (
+                  <Home />
+              )}
+          />
+          <Route
+              path={`${process.env.PUBLIC_URL}/add`}
+              render={() => (
+                  <Home />
+              )}
+          />
         </Suspense>
       </Router>
     </>
   );
-}
+} 
 
 export default App;
