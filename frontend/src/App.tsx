@@ -5,7 +5,6 @@ import './App.css';
 import { History } from 'history';
 import { useDispatch } from 'react-redux';
 import { loginActions } from './store/auth/login';
-import Auth from './components/HOC/authCheck';
 
 const Home = React.lazy(() => import('./pages/Home'));
 const Adder = React.lazy(() => import('./pages/Adder'));
