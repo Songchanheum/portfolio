@@ -5,7 +5,6 @@ import { Avatar, Box,  Button,  Flex, HStack, IconButton, Link, Popover, Popover
 import {useColorMode} from "@chakra-ui/color-mode";
 import {useMediaQuery} from '@chakra-ui/media-query';
 import { FaSun, FaMoon, FaInstagram, FaGithub, FaMediumM, FaRegWindowClose, FaWindowClose} from 'react-icons/fa';
-import NextLink from 'next/link';
 import SideMenu from './SideMenu';
 import BornImage from '../image/born.jpg';
 import CreamImage from '../image/cream.jpg';
@@ -13,10 +12,8 @@ import RepairImage from '../image/repair.jpg';
 
 function menu(props:any) {
     const { colorMode, toggleColorMode} = useColorMode();
-    const { isOpen, onOpen, onClose } = useDisclosure()
     const [display , changeDisplay] = useState(false);
     const isDark = colorMode === "dark";
-    const btnRef = React.useRef()
     
     const [isSmallScreen] = useMediaQuery('(min-width:750px)');
 
