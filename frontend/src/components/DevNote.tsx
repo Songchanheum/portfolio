@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react"
 import PortImage from "../image/portfolio.jpg";
 import Port2Image from "../image/portfolio2.jpg";
-
+import AptImage from "../image/aptImage.jpg";
 function DevNote(props:any) {
     
     const { colorMode } = useColorMode();
@@ -1021,6 +1021,78 @@ function DevNote(props:any) {
                             {isSmallScreen ? 
                             <HStack spacing={1} flex="1" textAlign="left">
                                 <Box>
+                                아파트 홍보 페이지
+                                </Box>
+                                <Box>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                    ReactJS
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="orange">
+                                    Javascript
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                    JAVA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                                    SpringBoot
+                                </Tag>
+                                </Box>
+                            </HStack>
+                            :
+                            <Box flex="1" textAlign="left">
+                             아파트 홍보 페이지
+                            </Box>
+                            
+                            }
+                            <AccordionIcon />
+                        </AccordionButton>
+                        </h2>
+                        <AccordionPanel>
+                        {isSmallScreen ? 
+                        '':
+                        <HStack spacing={1}>
+                            <Box>
+                            <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="blue">
+                                    ReactJS
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="orange">
+                                    Javascript
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="red">
+                                    JAVA
+                                </Tag>
+                                <Tag ml={1} size={'sm'} key={'sm'} variant="solid" colorScheme="pink">
+                                    SpringBoot
+                                </Tag>
+                            </Box>
+                        </HStack>
+                        }
+                        
+                        <Image src={AptImage}></Image>
+                        <Text fontSize="xl" mb={3}>
+                            2021.09 ~ 2021.10(진행중)
+                        </Text>
+                        <ListItem>
+                        참여 인원 : 1명
+                        </ListItem>
+                        <ListItem>
+                         Chakra UI Component를 이용하여 개발
+                        </ListItem>
+                        <ListItem>
+                            아파트 입주민 소통을 위한 카카오톡, 네이버카페 가입 유도 
+                        </ListItem>
+                        
+                        <ListItem>
+                            http://chsong.iptime.org:9000/aptInfo/main
+                        </ListItem>
+                        </AccordionPanel>
+                    </AccordionItem>
+                <AccordionItem>
+                        <h2>
+                        <AccordionButton backgroundColor={isDark? "gray.600" : "gray.100"} _expanded={{ bg: isDark? "gray.500" : "gray.200", color: isDark ? "white" : "gray.700" }}>
+                            {isSmallScreen ? 
+                            <HStack spacing={1} flex="1" textAlign="left">
+                                <Box>
                                 포트폴리오 웹 페이지 개발
                                 </Box>
                                 <Box>
@@ -1068,10 +1140,10 @@ function DevNote(props:any) {
                         </HStack>
                         }
                         <Text fontSize="xl" mb={3}>
-                            2021.07 ~ 2021.08(진행중)
+                            2021.07 ~ 2021.10(진행중)
                         </Text>
                         <ListItem>
-                        참여 인원 : 1명
+                        참여 인원 : 2명
                         </ListItem>
                         <ListItem>
                          Chakra UI Component를 이용하여 개발
