@@ -7,7 +7,7 @@
 >     
 > - UI - Chakra UI Component
 >     
-> - B -
+> - B - (ex) express, NodeJS
 >     
 > - DB - PostgreSQL
 
