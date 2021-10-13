@@ -16,13 +16,56 @@ function Adder(props:any) {
             <FormLabel>First name</FormLabel>
             <Input placeholder="First name" />
             <FormHelperText>Select only if you're a fan.</FormHelperText>
+            <FormLabel>First name</FormLabel>
+            <Input placeholder="First name" />
+            <FormHelperText>Select only if you're a fan.</FormHelperText>
+            <FormLabel>First name</FormLabel>
+            <Input placeholder="First name" />
+            <FormHelperText>Select only if you're a fan.</FormHelperText>
+            <FormLabel>First name</FormLabel>
+            <Input placeholder="First name" />
+            <FormHelperText>Select only if you're a fan.</FormHelperText>
+            <FormLabel>First name</FormLabel>
+            <Input placeholder="First name" />
+            <FormHelperText>Select only if you're a fan.</FormHelperText>
+            <FormLabel>First name</FormLabel>
+            <Input placeholder="First name" />
+            <FormHelperText>Select only if you're a fan.</FormHelperText>
+            <FormLabel>First name</FormLabel>
+            <Input placeholder="First name" />
+            <FormHelperText>Select only if you're a fan.</FormHelperText>
+            <FormLabel>First name</FormLabel>
+            <Input placeholder="First name" />
+            <FormHelperText>Select only if you're a fan.</FormHelperText>
+            <FormLabel>First name</FormLabel>
+            <Input placeholder="First name" />
+            <FormHelperText>Select only if you're a fan.</FormHelperText>
+            <FormLabel>First name</FormLabel>
+            <Input placeholder="First name" />
+            <FormHelperText>Select only if you're a fan.</FormHelperText>
+            <FormLabel>First name</FormLabel>
+            <Input placeholder="First name" />
+            <FormHelperText>Select only if you're a fan.</FormHelperText>
+            <FormLabel>First name</FormLabel>
+            <Input placeholder="First name" />
+            <FormHelperText>Select only if you're a fan.</FormHelperText>
+            <FormLabel>First name</FormLabel>
+            <Input placeholder="First name" />
+            <FormHelperText>Select only if you're a fan.</FormHelperText>
+            <FormLabel>First name</FormLabel>
+            <Input placeholder="First name" />
+            <FormHelperText>Select only if you're a fan.</FormHelperText>
+            <FormLabel>First name</FormLabel>
+            <Input placeholder="First name" />
+            <FormHelperText>Select only if you're a fan.</FormHelperText>
+
         </FormControl>
         <Button
             mt={4}
             colorScheme="teal"
             isLoading={props.isSubmitting}
             type="submit">
-            Submit
+            저장
         </Button>
     </>
   )
