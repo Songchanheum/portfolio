@@ -6,60 +6,31 @@ import {
     FormHelperText,
     Input,
     Button,
+    Box,
+    Flex,
   } from "@chakra-ui/react"
 
 function Adder(props:any) {
  
   return (
     <>
-        <FormControl id="first-name" isRequired>
+    <Flex>
+      <Box maxW="sm" borderWidth="1px" borderRadius="lg">
+      <FormControl id="first-name" isRequired>            
             <FormLabel>First name</FormLabel>
             <Input placeholder="First name" />
             <FormHelperText>Select only if you're a fan.</FormHelperText>
-            <FormLabel>First name</FormLabel>
-            <Input placeholder="First name" />
-            <FormHelperText>Select only if you're a fan.</FormHelperText>
-            <FormLabel>First name</FormLabel>
-            <Input placeholder="First name" />
-            <FormHelperText>Select only if you're a fan.</FormHelperText>
-            <FormLabel>First name</FormLabel>
-            <Input placeholder="First name" />
-            <FormHelperText>Select only if you're a fan.</FormHelperText>
-            <FormLabel>First name</FormLabel>
-            <Input placeholder="First name" />
-            <FormHelperText>Select only if you're a fan.</FormHelperText>
-            <FormLabel>First name</FormLabel>
-            <Input placeholder="First name" />
-            <FormHelperText>Select only if you're a fan.</FormHelperText>
-            <FormLabel>First name</FormLabel>
-            <Input placeholder="First name" />
-            <FormHelperText>Select only if you're a fan.</FormHelperText>
-            <FormLabel>First name</FormLabel>
-            <Input placeholder="First name" />
-            <FormHelperText>Select only if you're a fan.</FormHelperText>
-            <FormLabel>First name</FormLabel>
-            <Input placeholder="First name" />
-            <FormHelperText>Select only if you're a fan.</FormHelperText>
-            <FormLabel>First name</FormLabel>
-            <Input placeholder="First name" />
-            <FormHelperText>Select only if you're a fan.</FormHelperText>
-            <FormLabel>First name</FormLabel>
-            <Input placeholder="First name" />
-            <FormHelperText>Select only if you're a fan.</FormHelperText>
-            <FormLabel>First name</FormLabel>
-            <Input placeholder="First name" />
-            <FormHelperText>Select only if you're a fan.</FormHelperText>
-            <FormLabel>First name</FormLabel>
-            <Input placeholder="First name" />
-            <FormHelperText>Select only if you're a fan.</FormHelperText>
-            <FormLabel>First name</FormLabel>
-            <Input placeholder="First name" />
-            <FormHelperText>Select only if you're a fan.</FormHelperText>
-            <FormLabel>First name</FormLabel>
-            <Input placeholder="First name" />
-            <FormHelperText>Select only if you're a fan.</FormHelperText>
-
         </FormControl>
+      </Box>
+      <Box maxW="sm" borderWidth="1px" borderRadius="lg">
+      <FormControl id="first-name" isRequired>            
+            <FormLabel>First name</FormLabel>
+            <Input placeholder="First name" />
+            <FormHelperText>Select only if you're a fan.</FormHelperText>
+        </FormControl>
+      </Box>
+    </Flex>
+       
         <Button
             mt={4}
             colorScheme="teal"

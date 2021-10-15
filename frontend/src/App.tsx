@@ -13,12 +13,6 @@ interface HistoryType {
 }
 
 function App({ customHistory }: HistoryType) {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    //dispatch(loginActions.login({ username: 'SJMNC', password: 'high' })); // 관리자
-    dispatch(loginActions.login({ username: 'TEST', password: 'high' })); // 유저
-  }, []);
 
   return (
     <>
