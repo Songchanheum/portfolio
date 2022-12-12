@@ -1,4 +1,4 @@
-<a href="https://app.daily.dev/bsk9212"><img src="https://api.daily.dev/devcards/ad368c3f4844483193097876138458fb.png?r=5oh" width="400" alt="Song Chan's Dev Card"/></a>
+<a href="https://app.daily.dev/bsk9212"><img src="https://github.com/Songchanheum/portfolio/blob/master/devcard.svg" width="400" alt="Song Chan's Dev Card"/></a>
 
 # portfolio
 ### 목적 : 프로토타입 포트폴리오 웹 프로그램을 모듈화 하기위한 Repository
