@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Flex, VStack } from '@chakra-ui/layout';
 import Styled from 'styled-components';
-import Menu from '../components/menu';
-import Introduce from '../components/introduce';
+import Menu from '../components/Menu';
+import Introduce from '../components/Introduce';
 import SideMenu from '../components/SideMenu';
 import { Button, Divider } from '@chakra-ui/react';
 import Profile from '../components/Profile';

@@ -43,6 +43,7 @@ function DevNote(props: any) {
           <TabList mb="1em">
             <Tab>(주)카피앤패이스트</Tab>
             <Tab>(주)에코플래그</Tab>
+            <Tab>(주)알티모빌리티</Tab>
             <Tab>개인프로젝트</Tab>
           </TabList>
           <TabPanels>
@@ -1891,6 +1892,229 @@ function DevNote(props: any) {
                     >
                       {isSmallScreen ? (
                         <HStack spacing={1} flex="1" textAlign="left">
+                          <Box>
+                            Raidea Car Sharing Admin Page 개발 및 유지보수
+                          </Box>
+                          <Box>
+                            <Tag
+                              ml={1}
+                              size={'sm'}
+                              key={'sm'}
+                              variant="solid"
+                              colorScheme="blue"
+                            >
+                              ReactJS
+                            </Tag>
+                            <Tag
+                              ml={1}
+                              size={'sm'}
+                              key={'sm'}
+                              variant="solid"
+                              colorScheme="orange"
+                            >
+                              Javascript
+                            </Tag>
+                            <Tag
+                              ml={1}
+                              size={'sm'}
+                              key={'sm'}
+                              variant="solid"
+                              colorScheme="red"
+                            >
+                              Redux
+                            </Tag>
+                            <Tag
+                              ml={1}
+                              size={'sm'}
+                              key={'sm'}
+                              variant="solid"
+                              colorScheme="blue"
+                            >
+                              AntDesign
+                            </Tag>
+                          </Box>
+                        </HStack>
+                      ) : (
+                        <Box flex="1" textAlign="left">
+                          Raidea Car Sharing Admin Page 개발 및 유지보수
+                        </Box>
+                      )}
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel>
+                    {isSmallScreen ? (
+                      ''
+                    ) : (
+                      <HStack spacing={1}>
+                        <Box>
+                          <Tag
+                            ml={1}
+                            size={'sm'}
+                            key={'sm'}
+                            variant="solid"
+                            colorScheme="blue"
+                          >
+                            ReactJS
+                          </Tag>
+                          <Tag
+                            ml={1}
+                            size={'sm'}
+                            key={'sm'}
+                            variant="solid"
+                            colorScheme="orange"
+                          >
+                            Javascript
+                          </Tag>
+                          <Tag
+                            ml={1}
+                            size={'sm'}
+                            key={'sm'}
+                            variant="solid"
+                            colorScheme="red"
+                          >
+                            Redux
+                          </Tag>
+                          <Tag
+                            ml={1}
+                            size={'sm'}
+                            key={'sm'}
+                            variant="solid"
+                            colorScheme="blue"
+                          >
+                            AntDesign
+                          </Tag>
+                        </Box>
+                      </HStack>
+                    )}
+                    <Text fontSize="xl" mb={3}>
+                      2021.12 ~ 2023.01(진행중)
+                    </Text>
+                    <List>
+                      <ListItem>
+                        <ListIcon as={MdCheckCircle} color="green.500" />
+                        참여 인원 : 6명
+                      </ListItem>
+                      <ListItem>
+                        <ListIcon as={MdCheckCircle} color="green.500" />
+                        React 기반 CS-Admin Page 개발 및 유지보수
+                      </ListItem>
+                      <ListItem>
+                        <ListIcon as={MdCheckCircle} color="green.500" />
+                        Redux 활용을 위한 Code Refactoring
+                      </ListItem>
+                      <ListItem>
+                        <ListIcon as={MdCheckCircle} color="green.500" />
+                        Agile Scrum
+                      </ListItem>
+                    </List>
+                  </AccordionPanel>
+                </AccordionItem>
+                <AccordionItem>
+                  <h2>
+                    <AccordionButton
+                      backgroundColor={isDark ? 'gray.600' : 'gray.100'}
+                      _expanded={{
+                        bg: isDark ? 'gray.500' : 'gray.200',
+                        color: isDark ? 'white' : 'gray.700',
+                      }}
+                    >
+                      {isSmallScreen ? (
+                        <HStack spacing={1} flex="1" textAlign="left">
+                          <Box>
+                            MSA 기반 B/E 대응을 위한 BFF Service 개발 및
+                            유지보수
+                          </Box>
+                          <Box>
+                            <Tag
+                              ml={1}
+                              size={'sm'}
+                              key={'sm'}
+                              variant="solid"
+                              colorScheme="yellow"
+                            >
+                              TypeScript
+                            </Tag>
+                            <Tag
+                              ml={1}
+                              size={'sm'}
+                              key={'sm'}
+                              variant="solid"
+                              colorScheme="purple"
+                            >
+                              Lerna
+                            </Tag>
+                          </Box>
+                        </HStack>
+                      ) : (
+                        <Box flex="1" textAlign="left">
+                          포트폴리오 웹 페이지 개발
+                        </Box>
+                      )}
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel>
+                    {isSmallScreen ? (
+                      ''
+                    ) : (
+                      <HStack spacing={1}>
+                        <Box>
+                          <Tag
+                            ml={1}
+                            size={'sm'}
+                            key={'sm'}
+                            variant="solid"
+                            colorScheme="yellow"
+                          >
+                            TypeScript
+                          </Tag>
+                          <Tag
+                            ml={1}
+                            size={'sm'}
+                            key={'sm'}
+                            variant="solid"
+                            colorScheme="purple"
+                          >
+                            Lerna
+                          </Tag>
+                        </Box>
+                      </HStack>
+                    )}
+                    <Text fontSize="xl" mb={3}>
+                      2021.12 ~ 2023.01(진행중)
+                    </Text>
+                    <List>
+                      <ListItem>
+                        <ListIcon as={MdCheckCircle} color="green.500" />
+                        참여 인원 : 6명
+                      </ListItem>
+                      <ListItem>
+                        <ListIcon as={MdCheckCircle} color="green.500" />
+                        MSA Service 대응을 위한 BFF Service 개발 및 유지보수
+                      </ListItem>
+                      <ListItem>
+                        <ListIcon as={MdCheckCircle} color="green.500" />
+                        Typescript 기반 Lerna 이용하여 Mono-Repo 구현
+                      </ListItem>
+                    </List>
+                  </AccordionPanel>
+                </AccordionItem>
+              </Accordion>
+            </TabPanel>
+            <TabPanel>
+              <Accordion allowMultiple allowToggle mb={2}>
+                <AccordionItem>
+                  <h2>
+                    <AccordionButton
+                      backgroundColor={isDark ? 'gray.600' : 'gray.100'}
+                      _expanded={{
+                        bg: isDark ? 'gray.500' : 'gray.200',
+                        color: isDark ? 'white' : 'gray.700',
+                      }}
+                    >
+                      {isSmallScreen ? (
+                        <HStack spacing={1} flex="1" textAlign="left">
                           <Box>아파트 홍보 페이지</Box>
                           <Box>
                             <Tag
@@ -2002,7 +2226,6 @@ function DevNote(props: any) {
                         <ListIcon as={MdCheckCircle} color="green.500" />
                         아파트 입주민 소통을 위한 카카오톡, 네이버카페 가입 유도
                       </ListItem>
-
                       <ListItem>
                         <ListIcon as={MdCheckCircle} color="green.500" />
                         http://chsong.iptime.org:9000/aptInfo/main

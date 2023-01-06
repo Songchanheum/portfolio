@@ -21,6 +21,7 @@ function DevTimeline() {
   const [cnp, setCnp] = useState(false);
   const [cnp1, setCnp1] = useState(false);
   const [eco, setEco] = useState(false);
+  const [alti, setAlti] = useState(false);
   const isDark = colorMode === 'dark';
   const [isSmallScreen] = useMediaQuery('(min-width:750px)');
 
@@ -40,6 +41,7 @@ function DevTimeline() {
             date="2011.3 - 2017.2"
             iconStyle={{ background: 'rgb(0,200,200)', color: '#fff' }}
             icon={<FaUniversity />}
+            position={'left'}
           >
             <h3 className="vertical-timeline-element-title">안양대학교</h3>
             <h4 className="vertical-timeline-element-subtitle">
@@ -55,6 +57,7 @@ function DevTimeline() {
             contentArrowStyle={{ borderRight: '7px solid  rgb(16, 204, 82)' }}
             iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
             icon={<GiHand />}
+            position={'right'}
           >
             <h3 className="vertical-timeline-element-title">
               (주)카피앤패이스트
@@ -118,6 +121,7 @@ function DevTimeline() {
               }}
               iconStyle={{ background: 'rgb(237, 165, 169)', color: '#fff' }}
               icon={<FaBuilding />}
+              position={'left'}
             >
               <h3 className="vertical-timeline-element-title">
                 (주)카피앤패이스트
@@ -157,6 +161,7 @@ function DevTimeline() {
             contentArrowStyle={{ borderRight: '7px solid  rgb(16, 204, 82)' }}
             iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
             icon={<GiHand />}
+            position={'right'}
           >
             <h3 className="vertical-timeline-element-title">(주)에코플래그</h3>
             <h4 className="vertical-timeline-element-subtitle">대리</h4>
@@ -168,13 +173,14 @@ function DevTimeline() {
           >
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              date="2020.11 ~ 현재까지"
+              date="2020.11 ~ 2021.11"
               contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
               contentArrowStyle={{
                 borderRight: '7px solid  rgb(33, 150, 243)',
               }}
               iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
               icon={<FaBuilding />}
+              position={'left'}
             >
               <h3 className="vertical-timeline-element-title">
                 (주)에코플래그
@@ -198,6 +204,65 @@ function DevTimeline() {
                   2020.12 - 2021.08 배출영향분석 표준 프로그램 유지관리(2021)
                 </p>
                 <p>2020.11 - 2021.03 전국오염원조사 DB 및 웹 시스템 구축(4)</p>
+              </Box>
+            </VerticalTimelineElement>
+          </div>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2021.11"
+            contentStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(233, 30, 99)' }}
+            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+            icon={<GiHand />}
+            position={'right'}
+          >
+            <h3 className="vertical-timeline-element-title">(주)에코플래그</h3>
+            <h4 className="vertical-timeline-element-subtitle">대리</h4>
+            <p>(주)에코플래그 퇴사</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2021.12"
+            contentStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(16, 204, 82)' }}
+            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+            icon={<GiHand />}
+            position={'right'}
+          >
+            <h3 className="vertical-timeline-element-title">(주)알티캐스트</h3>
+            <h4 className="vertical-timeline-element-subtitle">연구원</h4>
+            <p>(주) 알티캐스트 입사</p>
+            <p>(주) 알티모빌리티 로 사명 변경</p>
+          </VerticalTimelineElement>
+          <div
+            onMouseOver={() => setAlti(true)}
+            onMouseOut={() => setAlti(false)}
+          >
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="2021.12 ~ 현재"
+              contentStyle={{ background: 'rgb(255, 66, 51)', color: '#fff' }}
+              contentArrowStyle={{
+                borderRight: '7px solid  rgb(255, 66, 51)',
+              }}
+              iconStyle={{ background: 'rgb(255, 66, 51)', color: '#fff' }}
+              icon={<FaBuilding />}
+              position={'left'}
+            >
+              <h3 className="vertical-timeline-element-title">
+                {'(주)알티캐스트 -> (주)알티모빌리티'}
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">연구원</h4>
+
+              <Box display={alti || !isSmallScreen ? 'block' : 'none'}>
+                <p>
+                  2021.12 - 2023.01(진행중) Raidea Car Sharing Admin Page 개발
+                  및 유지보수
+                </p>
+                <p>
+                  2021.12 - 2023.01(진행중) MSA 기반 B/E 대응을 위한 BFF Service
+                  개발 및 유지보수
+                </p>
               </Box>
             </VerticalTimelineElement>
           </div>

@@ -19,7 +19,7 @@ import { AiOutlineDash } from 'react-icons/ai';
 
 import ProfileImage from '../image/profile.jpg';
 
-function introduce() {
+function Introduce() {
   const { colorMode } = useColorMode();
   const isDark = colorMode === 'dark';
 
@@ -90,4 +90,4 @@ function introduce() {
   );
 }
 
-export default introduce;
+export default Introduce;
