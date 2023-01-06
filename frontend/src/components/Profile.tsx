@@ -21,6 +21,7 @@ import ProfileImage from '../image/profile1.jpg';
 import GohomeImage from '../image/gohome.gif';
 import HomeImage from '../image/home.gif';
 import OfficeImage from '../image/office.gif';
+import DevTag from './common/devTag';
 
 function Profile() {
   const { colorMode } = useColorMode();
@@ -140,204 +141,28 @@ function Profile() {
                 Tech Stack
               </Text>
               <Box>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="gray"
-                >
-                  AngularJS
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="cyan"
-                >
-                  VueJs
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="blue"
-                >
-                  ReactJS
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="gray"
-                >
-                  express
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="linkedin"
-                >
-                  Electron
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="facebook"
-                >
-                  JQuery
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="orange"
-                >
-                  Javascript
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="yellow"
-                >
-                  TypeScript
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="red"
-                >
-                  JAVA
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="pink"
-                >
-                  Spring Framework
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="pink"
-                >
-                  SpringBoot
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="facebook"
-                >
-                  eGovFramework
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="telegram"
-                >
-                  C
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="telegram"
-                >
-                  NDK
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="telegram"
-                >
-                  C#/ASP
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="telegram"
-                >
-                  C#
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="whatsapp"
-                >
-                  MySQL
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="blackAlpha"
-                >
-                  MSSQL
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="red"
-                >
-                  Oracle
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="cyan"
-                >
-                  PostgreSQL
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="red"
-                >
-                  JPA
-                </Tag>
-                <Tag
-                  ml={1}
-                  size={'sm'}
-                  key={'sm'}
-                  variant="solid"
-                  colorScheme="purple"
-                >
-                  NoSQL
-                </Tag>
+                <DevTag color="gray" label="AngularJS" />
+                <DevTag color="cyan" label="VueJs" />
+                <DevTag color="blue" label="ReactJS" />
+                <DevTag color="gray" label="express" />
+                <DevTag color="linkedin" label="Electron" />
+                <DevTag color="facebook" label="JQuery" />
+                <DevTag color="orange" label="Javascript" />
+                <DevTag color="yellow" label="TypeScript" />
+                <DevTag color="red" label="JAVA" />
+                <DevTag color="pink" label="Spring Framework" />
+                <DevTag color="pink" label="SpringBoot" />
+                <DevTag color="facebook" label="eGovFramework" />
+                <DevTag color="telegram" label="C" />
+                <DevTag color="telegram" label="NDK" />
+                <DevTag color="telegram" label="C#/ASP" />
+                <DevTag color="telegram" label="C#" />
+                <DevTag color="whatsapp" label="MySQL" />
+                <DevTag color="blackAlpha" label="MSSQL" />
+                <DevTag color="red" label="Oracle" />
+                <DevTag color="cyan" label="PostgreSQL" />
+                <DevTag color="red" label="JPA" />
+                <DevTag color="purple" label="NoSQL" />
               </Box>
             </Stack>
           </Box>
