@@ -47,7 +47,9 @@
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
     "deploy": "gh-pages -b master -d build",
-    "clean": "gh-pages-clean"
+    "clean": "gh-pages-clean",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "browserslist": {
     "production": [
@@ -62,6 +64,17 @@
     ]
   },
   "devDependencies": {
+    "@chakra-ui/storybook-addon": "^4.0.16",
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-interactions": "^6.5.15",
+    "@storybook/addon-links": "^6.5.15",
+    "@storybook/builder-webpack5": "^6.5.15",
+    "@storybook/manager-webpack5": "^6.5.15",
+    "@storybook/node-logger": "^6.5.15",
+    "@storybook/preset-create-react-app": "^4.1.2",
+    "@storybook/react": "^6.5.15",
+    "@storybook/testing-library": "^0.0.13",
     "@types/history": "^4.7.9",
     "@types/js-cookie": "^2.2.7",
     "@types/react-router-dom": "^5.1.8",
@@ -69,11 +82,26 @@
     "@types/styled-components": "^5.1.12",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
+    "babel-plugin-named-exports-order": "^0.0.2",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "7.21.5",
-    "eslint-plugin-react-hooks": "1.7.0"
+    "eslint-plugin-react-hooks": "1.7.0",
+    "prop-types": "^15.8.1",
+    "webpack": "^5.75.0"
   },
-  "homepage": "https://songchanheum.github.io/portfolio"
+  "homepage": "https://songchanheum.github.io/portfolio",
+  "eslintConfig": {
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  }
 }
