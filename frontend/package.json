@@ -1,9 +1,9 @@
 {
-  "name": "check_chakra",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@chakra-ui/react": "^1.6.6",
+    "@chakra-ui/react": "^2.4.6",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@fontsource/open-sans": "^4.5.0",
@@ -21,6 +21,7 @@
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "^8.3.0",
     "framer-motion": "^4",
+    "gh-pages": "^4.0.0",
     "js-cookie": "^3.0.0",
     "next": "^11.1.0",
     "prettier": "^2.3.2",
@@ -41,11 +42,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start:prod": "cp ./.env.prod ./.env && react-scripts start",
-    "build": "set \"GENERATE_SOURCEMAP=false\" && cp ./.env.dev ./.env && react-scripts build",
-    "build:prod": "set \"GENERATE_SOURCEMAP=false\" && cp ./.env.prod ./.env && react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -b master -d build",
+    "clean": "gh-pages-clean"
   },
   "browserslist": {
     "production": [
@@ -59,7 +61,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://ecoflagdev.iptime.org:9093/",
   "devDependencies": {
     "@types/history": "^4.7.9",
     "@types/js-cookie": "^2.2.7",
@@ -73,5 +74,6 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "7.21.5",
     "eslint-plugin-react-hooks": "1.7.0"
-  }
+  },
+  "homepage": "https://songchanheum.github.io/portfolio"
 }

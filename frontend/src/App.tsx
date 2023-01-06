@@ -13,27 +13,23 @@ interface HistoryType {
 }
 
 function App({ customHistory }: HistoryType) {
-
   return (
     <>
       <Router history={customHistory}>
         <Suspense fallback={<></>}>
-          <Route exact
-              path={`${process.env.PUBLIC_URL}/`}
-              render={() => (
-                  <Home />
-              )}
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/`}
+            render={() => <Home />}
           />
           <Route
-              path={`${process.env.PUBLIC_URL}/add`}
-              render={() => (
-                  <Adder />
-              )}
+            path={`${process.env.PUBLIC_URL}/add`}
+            render={() => <Adder />}
           />
         </Suspense>
       </Router>
     </>
   );
-} 
+}
 
 export default App;

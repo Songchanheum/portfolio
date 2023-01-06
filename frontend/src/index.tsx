@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
 import { configureStore } from '@reduxjs/toolkit';
 import rootReducer, { rootSaga } from './store';
-import {ColorModeScript, ChakraProvider} from '@chakra-ui/react';
+import { ColorModeScript, ChakraProvider } from '@chakra-ui/react';
 import './index.css';
 import App from './App';
 
@@ -27,12 +27,12 @@ sagaMiddleware.run(rootSaga);
 
 ReactDOM.render(
   <React.StrictMode>
-      <Provider store={store}>
-    <ChakraProvider>
-      <ColorModeScript initialColorMode="light" />
-      <App customHistory={customHistory} />
-    </ChakraProvider>
-      </Provider>
+    <Provider store={store}>
+      <ChakraProvider>
+        <ColorModeScript initialColorMode="light" />
+        <App customHistory={customHistory} />
+      </ChakraProvider>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
