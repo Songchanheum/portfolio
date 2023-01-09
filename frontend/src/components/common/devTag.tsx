@@ -1,5 +1,5 @@
-import { Tag } from '@chakra-ui/react';
 import React from 'react';
+import { Tag } from '@chakra-ui/react';
 
 function DevTag(props: any) {
   const { color, label } = props;
