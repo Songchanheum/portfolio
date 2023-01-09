@@ -21,7 +21,7 @@ import ProfileImage from '../image/profile1.jpg';
 import GohomeImage from '../image/gohome.gif';
 import HomeImage from '../image/home.gif';
 import OfficeImage from '../image/office.gif';
-import DevTag from './common/devTag';
+import DevTag from './common/DevTag';
 
 function Profile() {
   const { colorMode } = useColorMode();

@@ -39,7 +39,7 @@ import BornImage from '../image/born.jpg';
 import CreamImage from '../image/cream.jpg';
 import RepairImage from '../image/repair.jpg';
 
-function menu(props: any) {
+function Menu(props: any) {
   const { colorMode, toggleColorMode } = useColorMode();
   const [display, changeDisplay] = useState(false);
   const isDark = colorMode === 'dark';
@@ -183,4 +183,4 @@ function menu(props: any) {
     </>
   );
 }
-export default menu;
+export default Menu;

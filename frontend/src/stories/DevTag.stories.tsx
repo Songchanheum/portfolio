@@ -1,5 +1,5 @@
 import React from 'react';
-import DevTag from '../components/common/devTag';
+import DevTag from '../components/common/DevTag';
 
 export default {
   component: DevTag,
