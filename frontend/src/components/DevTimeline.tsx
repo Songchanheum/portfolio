@@ -176,13 +176,13 @@ function DevTimeline() {
           >
             <TimelineElement
               color="rgb(33, 150, 243)"
-              date="2020.11 ~ 2021.11"
+              date="2021.12 ~ "
               icon={<FaBuilding />}
               h3="(주)알티캐스트 -> (주)알티모빌리티"
               h4="연구원"
               plist={[
-                '2021.12 - 2023.01(진행중) Raidea Car Sharing Admin Page 개발 및 유지보수',
-                '2021.12 - 2023.01(진행중) MSA 기반 B/E 대응을 위한 BFF Service 개발 및 유지보수',
+                '2021.12 - (진행중) Raidea Car Sharing Admin Page 개발 및 유지보수',
+                '2021.12 - (진행중) MSA 기반 B/E 대응을 위한 BFF Service 개발 및 유지보수',
               ]}
               position="left"
               display={alti || !isSmallScreen}

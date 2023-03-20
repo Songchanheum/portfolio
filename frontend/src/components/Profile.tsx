@@ -28,7 +28,16 @@ function Profile() {
   const [isSmallScreen] = useMediaQuery('(min-width:1270px)');
 
   const isDark = colorMode === 'dark';
-  const hour = new Date().getHours();
+  const dateNow = new Date();
+  const hour = dateNow.getHours();
+  const year = dateNow.getFullYear();
+  const birthDate = new Date(1992, 12, 12);
+  let age = year - birthDate.getFullYear();
+  const m = dateNow.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && dateNow.getDate() < birthDate.getDate())) {
+    age--;
+  }
+
   return (
     <>
       <Flex
@@ -39,7 +48,7 @@ function Profile() {
         <Box alignSelf="center" px="16" py="16">
           <Flex>
             <Heading fontWeight="extrabold" color="pink.700" size="4xl">
-              7
+              {year - 2016}
             </Heading>
             <Text
               fontWeight="bold"
@@ -116,9 +125,10 @@ function Profile() {
                 Introduce
               </Text>
               <UnorderedList textAlign="left" paddingLeft={5} m={0}>
-                <ListItem>1992년 12월 12일생 (만 28세)</ListItem>
+                <ListItem>1992년 12월 12일생 (만 {age}세)</ListItem>
                 <ListItem>안양대학교 정보통신공학과 졸업(2017.02)</ListItem>
-                <ListItem>7년차 Front-end 개발자 (2016.11 입사)</ListItem>
+                <ListItem>{year - 2016}년차 Web 개발자 (2016.11 입사)</ListItem>
+                <ListItem>{year - 2020}년차 Front-end 개발자</ListItem>
                 <ListItem>새로운 도전을 좋아하는 열정이 넘치는 인재</ListItem>
               </UnorderedList>
             </Stack>

@@ -1988,7 +1988,7 @@ function DevNote(props: any) {
                       </HStack>
                     )}
                     <Text fontSize="xl" mb={3}>
-                      2021.12 ~ 2023.01(진행중)
+                      2021.12 ~ (진행중)
                     </Text>
                     <List>
                       <ListItem>
@@ -2082,7 +2082,7 @@ function DevNote(props: any) {
                       </HStack>
                     )}
                     <Text fontSize="xl" mb={3}>
-                      2021.12 ~ 2023.01(진행중)
+                      2021.12 ~ (진행중)
                     </Text>
                     <List>
                       <ListItem>
