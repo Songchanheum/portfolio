@@ -9,22 +9,20 @@ import {
   AccordionItem,
   AccordionPanel,
   Box,
-  Button,
   HStack,
   Image,
   List,
   ListIcon,
   ListItem,
-  Tag,
   Text,
-  VStack,
 } from '@chakra-ui/react';
-import { Link } from 'react-scroll';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import PortImage from '../image/portfolio.jpg';
 import Port2Image from '../image/portfolio2.jpg';
 import AptImage from '../image/aptImage.jpg';
 import { MdCheckCircle } from 'react-icons/md';
+import DevTag from './common/DevTag';
+
 function DevNote(props: any) {
   const { colorMode } = useColorMode();
   const isDark = colorMode === 'dark';
@@ -62,42 +60,10 @@ function DevNote(props: any) {
                         <HStack spacing={1} flex="1" textAlign="left">
                           <Box>EPC Cloud IoT Portal 구축 프로젝트 - 케이티</Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="gray"
-                            >
-                              AngularJS
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="blue"
-                            >
-                              Javascript
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="red"
-                            >
-                              JAVA
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="pink"
-                            >
-                              Spring Framework
-                            </Tag>
+                            <DevTag color="gray" label="AngularJS" />
+                            <DevTag color="orange" label="Javascript" />
+                            <DevTag color="red" label="JAVA" />
+                            <DevTag color="pink" label="Spring Framework" />
                           </Box>
                         </HStack>
                       ) : (
@@ -114,42 +80,10 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="gray"
-                          >
-                            AngularJS
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="blue"
-                          >
-                            Javascript
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="red"
-                          >
-                            JAVA
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="pink"
-                          >
-                            Spring Framework
-                          </Tag>
+                          <DevTag color="gray" label="AngularJS" />
+                          <DevTag color="orange" label="Javascript" />
+                          <DevTag color="red" label="JAVA" />
+                          <DevTag color="pink" label="Spring Framework" />
                         </Box>
                       </HStack>
                     )}
@@ -186,33 +120,9 @@ function DevNote(props: any) {
                         <HStack spacing={1} flex="1" textAlign="left">
                           <Box>TV Coupon 서비스 고도화 - 케이티하이텔</Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="blue"
-                            >
-                              Javascript
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="red"
-                            >
-                              JAVA
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="pink"
-                            >
-                              Spring Framework
-                            </Tag>
+                            <DevTag color="orange" label="Javascript" />
+                            <DevTag color="red" label="JAVA" />
+                            <DevTag color="pink" label="Spring Framework" />
                           </Box>
                         </HStack>
                       ) : (
@@ -230,33 +140,9 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="blue"
-                          >
-                            Javascript
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="red"
-                          >
-                            JAVA
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="pink"
-                          >
-                            Spring Framework
-                          </Tag>
+                          <DevTag color="orange" label="Javascript" />
+                          <DevTag color="red" label="JAVA" />
+                          <DevTag color="pink" label="Spring Framework" />
                         </Box>
                       </HStack>
                     )}
@@ -295,15 +181,7 @@ function DevNote(props: any) {
                             마이크로템플릿 WEBAPP Service 고도화 - 케이티하이텔
                           </Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="blue"
-                            >
-                              Javascript
-                            </Tag>
+                            <DevTag color="orange" label="Javascript" />
                           </Box>
                         </HStack>
                       ) : (
@@ -321,15 +199,7 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="blue"
-                          >
-                            Javascript
-                          </Tag>
+                          <DevTag color="orange" label="Javascript" />
                         </Box>
                       </HStack>
                     )}
@@ -370,24 +240,8 @@ function DevNote(props: any) {
                             구축 - 내부과제
                           </Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="blue"
-                            >
-                              Javascript
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="cyan"
-                            >
-                              VueJs
-                            </Tag>
+                            <DevTag color="orange" label="Javascript" />
+                            <DevTag color="cyan" label="VueJs" />
                           </Box>
                         </HStack>
                       ) : (
@@ -405,24 +259,8 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="blue"
-                          >
-                            Javascript
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="cyan"
-                          >
-                            VueJs
-                          </Tag>
+                          <DevTag color="orange" label="Javascript" />
+                          <DevTag color="cyan" label="VueJs" />
                         </Box>
                       </HStack>
                     )}
@@ -459,33 +297,9 @@ function DevNote(props: any) {
                         <HStack spacing={1} textAlign="left" flex="1">
                           <Box>GolfZone Matrixview 서비스 개발 - 골프존</Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="teal"
-                            >
-                              Android
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="telegram"
-                            >
-                              C
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="telegram"
-                            >
-                              NDK
-                            </Tag>
+                            <DevTag color="teal" label="Android" />
+                            <DevTag color="telegram" label="C" />
+                            <DevTag color="telegram" label="NDK" />
                           </Box>
                         </HStack>
                       ) : (
@@ -503,33 +317,9 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="teal"
-                          >
-                            Android
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="telegram"
-                          >
-                            C
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="telegram"
-                          >
-                            NDK
-                          </Tag>
+                          <DevTag color="teal" label="Android" />
+                          <DevTag color="telegram" label="C" />
+                          <DevTag color="telegram" label="NDK" />
                         </Box>
                       </HStack>
                     )}
@@ -552,7 +342,6 @@ function DevNote(props: any) {
                         Android Stream Library 개발 참여 NDK를 이용한 C언어 파일
                         스트리밍 Library 개발
                       </ListItem>
-
                       <ListItem>
                         <ListIcon as={MdCheckCircle} color="green.500" />
                         현재 ‘GolfZon 안성’에서 서비스 진행중
@@ -573,33 +362,9 @@ function DevNote(props: any) {
                         <HStack spacing={1} textAlign="left" flex="1">
                           <Box>Freeview 서비스 개발 - 케이티</Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="red"
-                            >
-                              JAVA
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="pink"
-                            >
-                              Spring Framework
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="purple"
-                            >
-                              Netty
-                            </Tag>
+                            <DevTag color="red" label="JAVA" />
+                            <DevTag color="pink" label="Spring Framework" />
+                            <DevTag color="purple" label="Netty" />
                           </Box>
                         </HStack>
                       ) : (
@@ -607,7 +372,6 @@ function DevNote(props: any) {
                           Freeview 서비스 개발
                         </Box>
                       )}
-
                       <AccordionIcon />
                     </AccordionButton>
                   </h2>
@@ -617,33 +381,9 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="red"
-                          >
-                            JAVA
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="pink"
-                          >
-                            Spring Framework
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="purple"
-                          >
-                            Netty
-                          </Tag>
+                          <DevTag color="red" label="JAVA" />
+                          <DevTag color="pink" label="Spring Framework" />
+                          <DevTag color="purple" label="Netty" />
                         </Box>
                       </HStack>
                     )}
@@ -688,33 +428,9 @@ function DevNote(props: any) {
                             인터렉티브 타임슬라이스 서비스 고도화 - 케이티
                           </Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="red"
-                            >
-                              JAVA
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="pink"
-                            >
-                              Spring Framework
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="purple"
-                            >
-                              Netty
-                            </Tag>
+                            <DevTag color="red" label="JAVA" />
+                            <DevTag color="pink" label="Spring Framework" />
+                            <DevTag color="purple" label="Netty" />
                           </Box>
                         </HStack>
                       ) : (
@@ -722,7 +438,6 @@ function DevNote(props: any) {
                           인터렉티브 타임슬라이스 서비스 고도화
                         </Box>
                       )}
-
                       <AccordionIcon />
                     </AccordionButton>
                   </h2>
@@ -732,33 +447,9 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="red"
-                          >
-                            JAVA
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="pink"
-                          >
-                            Spring Framework
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="purple"
-                          >
-                            Netty
-                          </Tag>
+                          <DevTag color="red" label="JAVA" />
+                          <DevTag color="pink" label="Spring Framework" />
+                          <DevTag color="purple" label="Netty" />
                         </Box>
                       </HStack>
                     )}
@@ -799,33 +490,9 @@ function DevNote(props: any) {
                         <HStack spacing={1} textAlign="left" flex="1">
                           <Box>인터렉티브 멀티뷰 서비스 고도화 - 케이티</Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="red"
-                            >
-                              JAVA
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="pink"
-                            >
-                              Spring Framework
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="purple"
-                            >
-                              Netty
-                            </Tag>
+                            <DevTag color="red" label="JAVA" />
+                            <DevTag color="pink" label="Spring Framework" />
+                            <DevTag color="purple" label="Netty" />
                           </Box>
                         </HStack>
                       ) : (
@@ -833,7 +500,6 @@ function DevNote(props: any) {
                           인터렉티브 멀티뷰 서비스 고도화
                         </Box>
                       )}
-
                       <AccordionIcon />
                     </AccordionButton>
                   </h2>
@@ -843,33 +509,9 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="red"
-                          >
-                            JAVA
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="pink"
-                          >
-                            Spring Framework
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="purple"
-                          >
-                            Netty
-                          </Tag>
+                          <DevTag color="red" label="JAVA" />
+                          <DevTag color="pink" label="Spring Framework" />
+                          <DevTag color="purple" label="Netty" />
                         </Box>
                       </HStack>
                     )}
@@ -909,42 +551,10 @@ function DevNote(props: any) {
                             (주)알티캐스트
                           </Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="red"
-                            >
-                              JAVA
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="pink"
-                            >
-                              Spring Framework
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="gray"
-                            >
-                              AngularJS
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="facebook"
-                            >
-                              JQuery
-                            </Tag>
+                            <DevTag color="red" label="JAVA" />
+                            <DevTag color="pink" label="Spring Framework" />
+                            <DevTag color="gray" label="AngularJS" />
+                            <DevTag color="facebook" label="JQuery" />
                           </Box>
                         </HStack>
                       ) : (
@@ -952,7 +562,6 @@ function DevNote(props: any) {
                           OTT Telebee 통합관리 시스템 구축 및 개발
                         </Box>
                       )}
-
                       <AccordionIcon />
                     </AccordionButton>
                   </h2>
@@ -962,42 +571,10 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="red"
-                          >
-                            JAVA
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="pink"
-                          >
-                            Spring Framework
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="gray"
-                          >
-                            AngularJS
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="facebook"
-                          >
-                            JQuery
-                          </Tag>
+                          <DevTag color="red" label="JAVA" />
+                          <DevTag color="pink" label="Spring Framework" />
+                          <DevTag color="gray" label="AngularJS" />
+                          <DevTag color="facebook" label="JQuery" />
                         </Box>
                       </HStack>
                     )}
@@ -1035,24 +612,8 @@ function DevNote(props: any) {
                         <HStack spacing={1} textAlign="left" flex="1">
                           <Box>MSMS 개발 및 운영 용역 - 케이티하이텔</Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="telegram"
-                            >
-                              C#/ASP
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="blackAlpha"
-                            >
-                              MSSQL
-                            </Tag>
+                            <DevTag color="telegram" label="C#/ASP" />
+                            <DevTag color="blackAlpha" label="MSSQL" />
                           </Box>
                         </HStack>
                       ) : (
@@ -1060,7 +621,6 @@ function DevNote(props: any) {
                           MSMS 개발 및 운영 용역
                         </Box>
                       )}
-
                       <AccordionIcon />
                     </AccordionButton>
                   </h2>
@@ -1070,24 +630,8 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="telegram"
-                          >
-                            C#/ASP
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="blackAlpha"
-                          >
-                            MSSQL
-                          </Tag>
+                          <DevTag color="telegram" label="C#/ASP" />
+                          <DevTag color="blackAlpha" label="MSSQL" />
                         </Box>
                       </HStack>
                     )}
@@ -1126,24 +670,8 @@ function DevNote(props: any) {
                             시스템 개발
                           </Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="orange"
-                            >
-                              Javascript
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="blue"
-                            >
-                              ReactJS
-                            </Tag>
+                            <DevTag color="orange" label="Javascript" />
+                            <DevTag color="blue" label="ReactJS" />
                           </Box>
                         </HStack>
                       ) : (
@@ -1161,24 +689,8 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="orange"
-                          >
-                            Javascript
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="blue"
-                          >
-                            ReactJS
-                          </Tag>
+                          <DevTag color="orange" label="Javascript" />
+                          <DevTag color="blue" label="ReactJS" />
                         </Box>
                       </HStack>
                     )}
@@ -1218,60 +730,12 @@ function DevNote(props: any) {
                             연계관로 운영지원시스템 구축
                           </Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="red"
-                            >
-                              JAVA
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="facebook"
-                            >
-                              eGovFramework
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="red"
-                            >
-                              JPA
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="cyan"
-                            >
-                              PostgreSQL
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="orange"
-                            >
-                              Javascript
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="blue"
-                            >
-                              ReactJS
-                            </Tag>
+                            <DevTag color="red" label="JAVA" />
+                            <DevTag color="facebook" label="eGovFramework" />
+                            <DevTag color="red" label="JPA" />
+                            <DevTag color="cyan" label="PostgreSQL" />
+                            <DevTag color="orange" label="Javascript" />
+                            <DevTag color="blue" label="ReactJS" />
                           </Box>
                         </HStack>
                       ) : (
@@ -1290,60 +754,12 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="red"
-                          >
-                            JAVA
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="facebook"
-                          >
-                            eGovFramework
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="red"
-                          >
-                            JPA
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="cyan"
-                          >
-                            PostgreSQL
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="orange"
-                          >
-                            Javascript
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="blue"
-                          >
-                            ReactJS
-                          </Tag>
+                          <DevTag color="red" label="JAVA" />
+                          <DevTag color="facebook" label="eGovFramework" />
+                          <DevTag color="red" label="JPA" />
+                          <DevTag color="cyan" label="PostgreSQL" />
+                          <DevTag color="orange" label="Javascript" />
+                          <DevTag color="blue" label="ReactJS" />
                         </Box>
                       </HStack>
                     )}
@@ -1375,60 +791,12 @@ function DevNote(props: any) {
                         <HStack spacing={1} flex="1" textAlign="left">
                           <Box>아쿠아유나이티드 4.0 시스템 개발</Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="red"
-                            >
-                              JAVA
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="pink"
-                            >
-                              SpringBoot
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="red"
-                            >
-                              JPA
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="cyan"
-                            >
-                              PostgreSQL
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="orange"
-                            >
-                              Javascript
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="blue"
-                            >
-                              ReactJS
-                            </Tag>
+                            <DevTag color="red" label="JAVA" />
+                            <DevTag color="pink" label="SpringBoot" />
+                            <DevTag color="red" label="JPA" />
+                            <DevTag color="cyan" label="PostgreSQL" />
+                            <DevTag color="orange" label="Javascript" />
+                            <DevTag color="blue" label="ReactJS" />
                           </Box>
                         </HStack>
                       ) : (
@@ -1445,60 +813,12 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="red"
-                          >
-                            JAVA
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="pink"
-                          >
-                            SpringBoot
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="red"
-                          >
-                            JPA
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="cyan"
-                          >
-                            PostgreSQL
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="orange"
-                          >
-                            Javascript
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="blue"
-                          >
-                            ReactJS
-                          </Tag>
+                          <DevTag color="red" label="JAVA" />
+                          <DevTag color="pink" label="SpringBoot" />
+                          <DevTag color="red" label="JPA" />
+                          <DevTag color="cyan" label="PostgreSQL" />
+                          <DevTag color="orange" label="Javascript" />
+                          <DevTag color="blue" label="ReactJS" />
                         </Box>
                       </HStack>
                     )}
@@ -1530,60 +850,12 @@ function DevNote(props: any) {
                         <HStack spacing={1} flex="1" textAlign="left">
                           <Box>물정보앱(Smart Water Grid) - 내부과제</Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="red"
-                            >
-                              JAVA
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="facebook"
-                            >
-                              eGovFramework
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="red"
-                            >
-                              JPA
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="cyan"
-                            >
-                              PostgreSQL
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="orange"
-                            >
-                              Javascript
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="blue"
-                            >
-                              ReactJS
-                            </Tag>
+                            <DevTag color="red" label="JAVA" />
+                            <DevTag color="facebook" label="eGovFramework" />
+                            <DevTag color="red" label="JPA" />
+                            <DevTag color="cyan" label="PostgreSQL" />
+                            <DevTag color="orange" label="Javascript" />
+                            <DevTag color="blue" label="ReactJS" />
                           </Box>
                         </HStack>
                       ) : (
@@ -1600,60 +872,12 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="red"
-                          >
-                            JAVA
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="facebook"
-                          >
-                            eGovFramework
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="red"
-                          >
-                            JPA
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="cyan"
-                          >
-                            PostgreSQL
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="orange"
-                          >
-                            Javascript
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="blue"
-                          >
-                            ReactJS
-                          </Tag>
+                          <DevTag color="red" label="JAVA" />
+                          <DevTag color="facebook" label="eGovFramework" />
+                          <DevTag color="red" label="JPA" />
+                          <DevTag color="cyan" label="PostgreSQL" />
+                          <DevTag color="orange" label="Javascript" />
+                          <DevTag color="blue" label="ReactJS" />
                         </Box>
                       </HStack>
                     )}
@@ -1690,25 +914,8 @@ function DevNote(props: any) {
                         <HStack spacing={1} flex="1" textAlign="left">
                           <Box>배출영향분석 표준 프로그램 유지관리(2021)</Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="telegram"
-                            >
-                              C#
-                            </Tag>
-
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="blackAlpha"
-                            >
-                              MSSQL
-                            </Tag>
+                            <DevTag color="telegram" label="C#" />
+                            <DevTag color="blackAlpha" label="MSSQL" />
                           </Box>
                         </HStack>
                       ) : (
@@ -1725,24 +932,8 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="telegram"
-                          >
-                            C#
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="blackAlpha"
-                          >
-                            MSSQL
-                          </Tag>
+                          <DevTag color="telegram" label="C#" />
+                          <DevTag color="blackAlpha" label="MSSQL" />
                         </Box>
                       </HStack>
                     )}
@@ -1774,42 +965,10 @@ function DevNote(props: any) {
                         <HStack spacing={1} flex="1" textAlign="left">
                           <Box>전국오염원조사 DB 및 웹 시스템 구축(4)</Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="facebook"
-                            >
-                              JQuery
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="blue"
-                            >
-                              Javascript
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="red"
-                            >
-                              JAVA
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="facebook"
-                            >
-                              eGovFramework
-                            </Tag>
+                            <DevTag color="facebook" label="JQuery" />
+                            <DevTag color="orange" label="Javascript" />
+                            <DevTag color="red" label="JAVA" />
+                            <DevTag color="facebook" label="eGovFramework" />
                           </Box>
                         </HStack>
                       ) : (
@@ -1826,42 +985,10 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="facebook"
-                          >
-                            JQuery
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="blue"
-                          >
-                            Javascript
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="red"
-                          >
-                            JAVA
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="facebook"
-                          >
-                            eGovFramework
-                          </Tag>
+                          <DevTag color="facebook" label="JQuery" />
+                          <DevTag color="orange" label="Javascript" />
+                          <DevTag color="red" label="JAVA" />
+                          <DevTag color="facebook" label="eGovFramework" />
                         </Box>
                       </HStack>
                     )}
@@ -1896,42 +1023,10 @@ function DevNote(props: any) {
                             Raidea Car Sharing Admin Page 개발 및 유지보수
                           </Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="blue"
-                            >
-                              ReactJS
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="orange"
-                            >
-                              Javascript
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="red"
-                            >
-                              Redux
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="blue"
-                            >
-                              AntDesign
-                            </Tag>
+                            <DevTag color="blue" label="ReactJS" />
+                            <DevTag color="orange" label="Javascript" />
+                            <DevTag color="red" label="Redux" />
+                            <DevTag color="blue" label="AntDesign" />
                           </Box>
                         </HStack>
                       ) : (
@@ -1948,42 +1043,10 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="blue"
-                          >
-                            ReactJS
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="orange"
-                          >
-                            Javascript
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="red"
-                          >
-                            Redux
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="blue"
-                          >
-                            AntDesign
-                          </Tag>
+                          <DevTag color="blue" label="ReactJS" />
+                          <DevTag color="orange" label="Javascript" />
+                          <DevTag color="red" label="Redux" />
+                          <DevTag color="blue" label="AntDesign" />
                         </Box>
                       </HStack>
                     )}
@@ -2026,24 +1089,8 @@ function DevNote(props: any) {
                             유지보수
                           </Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="yellow"
-                            >
-                              TypeScript
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="purple"
-                            >
-                              Lerna
-                            </Tag>
+                            <DevTag color="yellow" label="TypeScript" />
+                            <DevTag color="purple" label="Lerna" />
                           </Box>
                         </HStack>
                       ) : (
@@ -2060,24 +1107,8 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="yellow"
-                          >
-                            TypeScript
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="purple"
-                          >
-                            Lerna
-                          </Tag>
+                          <DevTag color="yellow" label="TypeScript" />
+                          <DevTag color="purple" label="Lerna" />
                         </Box>
                       </HStack>
                     )}
@@ -2117,42 +1148,10 @@ function DevNote(props: any) {
                         <HStack spacing={1} flex="1" textAlign="left">
                           <Box>아파트 홍보 페이지</Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="blue"
-                            >
-                              ReactJS
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="orange"
-                            >
-                              Javascript
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="red"
-                            >
-                              JAVA
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="pink"
-                            >
-                              SpringBoot
-                            </Tag>
+                            <DevTag color="blue" label="ReactJS" />
+                            <DevTag color="orange" label="Javascript" />
+                            <DevTag color="red" label="JAVA" />
+                            <DevTag color="pink" label="SpringBoot" />
                           </Box>
                         </HStack>
                       ) : (
@@ -2169,46 +1168,13 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="blue"
-                          >
-                            ReactJS
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="orange"
-                          >
-                            Javascript
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="red"
-                          >
-                            JAVA
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="pink"
-                          >
-                            SpringBoot
-                          </Tag>
+                          <DevTag color="blue" label="ReactJS" />
+                          <DevTag color="orange" label="Javascript" />
+                          <DevTag color="red" label="JAVA" />
+                          <DevTag color="pink" label="SpringBoot" />
                         </Box>
                       </HStack>
                     )}
-
                     <Image src={AptImage}></Image>
                     <Text fontSize="xl" mb={3}>
                       2021.09 ~ 2021.10(진행중)
@@ -2246,42 +1212,10 @@ function DevNote(props: any) {
                         <HStack spacing={1} flex="1" textAlign="left">
                           <Box>포트폴리오 웹 페이지 개발</Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="blue"
-                            >
-                              ReactJS
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="yellow"
-                            >
-                              TypeScript
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="gray"
-                            >
-                              express
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="purple"
-                            >
-                              NoSQL
-                            </Tag>
+                            <DevTag color="blue" label="ReactJS" />
+                            <DevTag color="yellow" label="TypeScript" />
+                            <DevTag color="gray" label="express" />
+                            <DevTag color="purple" label="NoSQL" />
                           </Box>
                         </HStack>
                       ) : (
@@ -2298,42 +1232,10 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="blue"
-                          >
-                            ReactJS
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="yellow"
-                          >
-                            TypeScript
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="gray"
-                          >
-                            express
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="purple"
-                          >
-                            NoSQL
-                          </Tag>
+                          <DevTag color="blue" label="ReactJS" />
+                          <DevTag color="yellow" label="TypeScript" />
+                          <DevTag color="gray" label="express" />
+                          <DevTag color="purple" label="NoSQL" />
                         </Box>
                       </HStack>
                     )}
@@ -2369,42 +1271,10 @@ function DevNote(props: any) {
                         <HStack spacing={1} flex="1" textAlign="left">
                           <Box>업비트 오토 트레이딩 프로그램 개발</Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="blue"
-                            >
-                              ReactJS
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="gray"
-                            >
-                              express
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="linkedin"
-                            >
-                              Electron
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="cyan"
-                            >
-                              PostgreSQL
-                            </Tag>
+                            <DevTag color="blue" label="ReactJS" />
+                            <DevTag color="gray" label="express" />
+                            <DevTag color="linkedin" label="Electron" />
+                            <DevTag color="cyan" label="PostgreSQL" />
                           </Box>
                         </HStack>
                       ) : (
@@ -2421,42 +1291,10 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="blue"
-                          >
-                            ReactJS
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="gray"
-                          >
-                            express
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="linkedin"
-                          >
-                            Electron
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="cyan"
-                          >
-                            PostgreSQL
-                          </Tag>
+                          <DevTag color="blue" label="ReactJS" />
+                          <DevTag color="gray" label="express" />
+                          <DevTag color="linkedin" label="Electron" />
+                          <DevTag color="cyan" label="PostgreSQL" />
                         </Box>
                       </HStack>
                     )}
@@ -2498,42 +1336,10 @@ function DevNote(props: any) {
                         <HStack spacing={1} flex="1" textAlign="left">
                           <Box>출퇴근 체크 프로그램</Box>
                           <Box>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="red"
-                            >
-                              JAVA
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="pink"
-                            >
-                              Spring Framework
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="whatsapp"
-                            >
-                              MySQL
-                            </Tag>
-                            <Tag
-                              ml={1}
-                              size={'sm'}
-                              key={'sm'}
-                              variant="solid"
-                              colorScheme="teal"
-                            >
-                              Android
-                            </Tag>
+                            <DevTag color="red" label="JAVA" />
+                            <DevTag color="pink" label="Spring Framework" />
+                            <DevTag color="whatsapp" label="MySQL" />
+                            <DevTag color="teal" label="Android" />
                           </Box>
                         </HStack>
                       ) : (
@@ -2550,42 +1356,10 @@ function DevNote(props: any) {
                     ) : (
                       <HStack spacing={1}>
                         <Box>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="red"
-                          >
-                            JAVA
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="pink"
-                          >
-                            Spring Framework
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="whatsapp"
-                          >
-                            MySQL
-                          </Tag>
-                          <Tag
-                            ml={1}
-                            size={'sm'}
-                            key={'sm'}
-                            variant="solid"
-                            colorScheme="teal"
-                          >
-                            Android
-                          </Tag>
+                          <DevTag color="red" label="JAVA" />
+                          <DevTag color="pink" label="Spring Framework" />
+                          <DevTag color="whatsapp" label="MySQL" />
+                          <DevTag color="teal" label="Android" />
                         </Box>
                       </HStack>
                     )}
