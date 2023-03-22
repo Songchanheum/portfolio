@@ -169,7 +169,7 @@ function Menu(props: any) {
           ml={2}
           icon={<FaMediumM />}
           isRound={round}
-          onClick={() => window.open('https://bsk9212.medium.com/', '_blank')}
+          onClick={() => window.open('https://songsblog.vercel.app/', '_blank')}
           aria-label="github"
         ></IconButton>
         <IconButton
