@@ -1008,6 +1008,72 @@ function DevNote(props: any) {
             </TabPanel>
             <TabPanel>
               <Accordion allowMultiple allowToggle mb={2}>
+              <AccordionItem>
+                  <h2>
+                    <AccordionButton
+                      backgroundColor={isDark ? 'gray.600' : 'gray.100'}
+                      _expanded={{
+                        bg: isDark ? 'gray.500' : 'gray.200',
+                        color: isDark ? 'white' : 'gray.700',
+                      }}
+                    >
+                      {isSmallScreen ? (
+                        <HStack spacing={1} flex="1" textAlign="left">
+                          <Box>
+                            Admin Page / Biz Portal Page 개발을 위한 Boiler plate 개발 진행
+                          </Box>
+                          <Box>
+                            <DevTag color="blue" label="ReactJS" />
+                            <DevTag color="yellow" label="TypeScript" />
+                            <DevTag color="purple" label="Vite" />
+                            <DevTag color="gray" label="NextJS" />
+                            <DevTag color="blue" label="TailwindCSS" />
+                          </Box>
+                        </HStack>
+                      ) : (
+                        <Box flex="1" textAlign="left">
+                          Raidea Car Sharing Admin Page 개발 및 유지보수
+                        </Box>
+                      )}
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel>
+                    {isSmallScreen ? (
+                      ''
+                    ) : (
+                      <HStack spacing={1}>
+                        <Box>
+                          <DevTag color="blue" label="ReactJS" />
+                          <DevTag color="orange" label="Javascript" />
+                          <DevTag color="red" label="Redux" />
+                          <DevTag color="blue" label="AntDesign" />
+                        </Box>
+                      </HStack>
+                    )}
+                    <Text fontSize="xl" mb={3}>
+                      2023.02 ~ (진행중)
+                    </Text>
+                    <List>
+                      <ListItem>
+                        <ListIcon as={MdCheckCircle} color="green.500" />
+                        참여 인원 : 5명
+                      </ListItem>
+                      <ListItem>
+                        <ListIcon as={MdCheckCircle} color="green.500" />
+                        NextJS/Typescript/TailwindCSS 이용한 Biz Portal 향 Boiler Plate 개발
+                      </ListItem>
+                      <ListItem>
+                        <ListIcon as={MdCheckCircle} color="green.500" />
+                        React/Vite/Typesciprt/TailwindCSS 이용한 Admin 향 Boiler Plate 개발
+                      </ListItem>
+                      <ListItem>
+                        <ListIcon as={MdCheckCircle} color="green.500" />
+                        Agile Scrum
+                      </ListItem>
+                    </List>
+                  </AccordionPanel>
+                </AccordionItem>
                 <AccordionItem>
                   <h2>
                     <AccordionButton
@@ -1065,10 +1131,6 @@ function DevNote(props: any) {
                       <ListItem>
                         <ListIcon as={MdCheckCircle} color="green.500" />
                         Redux 활용을 위한 Code Refactoring
-                      </ListItem>
-                      <ListItem>
-                        <ListIcon as={MdCheckCircle} color="green.500" />
-                        Agile Scrum
                       </ListItem>
                     </List>
                   </AccordionPanel>
